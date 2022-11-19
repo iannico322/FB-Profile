@@ -171,6 +171,7 @@ body{
     margin-top: -10%;
     border: 6px solid #242526; 
     border-radius: 50%; 
+    background-color: #242526;
 }
 .profile-image{
     cursor: pointer;
@@ -178,6 +179,9 @@ body{
     height: 11rem;
     width: 11rem;
 
+}
+.profile-image:active{
+    transform: scale(.97);
 }
 .profile-image:hover{
     filter:contrast(.9);
@@ -227,7 +231,7 @@ body{
 }
 .btns:hover{
     cursor: pointer;
-    filter:contrast(.7);
+    filter:brightness(1.1);
 }
 
 .add-story{
@@ -333,55 +337,6 @@ body{
     background-color: #3a3b3c;
 }
 
-
-
-.content-con{
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-
-    width: 100%;
-    flex-direction: column;
-    min-height: 20vh;
-    background-color:#18191a;
-}
-.content{
-    min-width: 60%;
-    max-width: 60%;
-
-    display: flex;
-    gap: 15px;
-    flex-direction: row;
-    
-}
-.info{
-    height: 500px;
-    width: 650px;
-    border-radius: 10px;
-    background-color:  #242526;
-}
-.post-con{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    min-height: 150px;
-    width: 100%;
-    gap: 20px;
-
-}
-.posting{
-
-    height:150px;
-    width: 100%;
-    border-radius: 8px;
-    background-color:  #242526;
-}
-.post{
-    min-height: 500px;
-    width: 100%;
-    border-radius: 8px;
-    background-color:  #242526;
-}
 
 
 
