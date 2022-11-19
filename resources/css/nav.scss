@@ -1,17 +1,18 @@
 $font : "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
 
 nav{
-    position: absolute;
+    position: fixed;
     z-index: 1;
     display: flex;
-    height: 50px;
+    height: 55px;
     background-color: #242526;
     border-bottom: 1px solid #ffffff36;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    top: 0;
 }
-ul{
+nav ul{
     margin-right: 1.2rem;
     display: flex;
     list-style: none;
@@ -28,20 +29,33 @@ ul{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: .9rem;
+    gap: 1rem;
     h3{
-        font-size: 1.6rem;
-        font-weight: 600;
+        font-size: 1.7rem;
+        font-weight: bolder;
+        letter-spacing: .5px;
         font-family: $font;
     }
 }
-
-.x1lliihq{
+.search{
+    color: #a1a1a1;
     background-color: #3a3b3c;
-    padding: .8rem;
+    padding: .7rem;
     border-radius: 50%;
     height: 15px;
     width: 15px;
+    cursor: pointer;
+    object-fit: contain;
+    &:hover{
+        background-color: #4f4f50;
+    }
+}
+.mess , .notif{
+    background-color: #3a3b3c;
+    padding: .6rem;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
     cursor: pointer;
     &:hover{
         background-color: #4f4f50;
