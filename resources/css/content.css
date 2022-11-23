@@ -172,17 +172,19 @@
 
 .post{
     position: relative;
-    min-height: 1000px;
-    max-height: 120%;
+    min-height: 40px;
+ 
     width: 100%;
     border-radius: 8px;
     background-color:  #242526;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+
 }
 .post-conn{
-    height: 96%;
+    margin-top: 30px;
+    margin-bottom: 20px;
     width: 95%;
     position: relative;
   
@@ -246,6 +248,7 @@
     background-color: #3a3b3c;
 }
 .content-post{
+    
     border: 1px solid rgba(226, 226, 226, 0.133);
     border-radius: 10px;
     border-top: none;
@@ -254,7 +257,7 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
-    min-height: 81%;
+    min-height: 20px;
     width: 100%;
 }
 .content-post img{
@@ -268,23 +271,34 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
-    height: 30px;
+   
+
 }
-.creator div{
+.separator{
     display: flex;
     align-items: center;
     gap: 2px;
+
+}
+.creator p{
+    font-size: .7rem;
+    color: #bbbbbb;
+    margin-bottom: 5px;
+}
+.content-post p{
+    position: relative;
 }
 .to {
     filter: invert(.7);
  
 }
-.creator h5{
+.separator h5{
     font-size: .9rem;
     font-family: 400;
     margin: 0;
+ 
 }
-.creator p {
+.separator p {
     color: #bbbbbb;
     font-size: .8rem;
     margin-top: 1px;
@@ -318,9 +332,12 @@
     color: #bbbbbb;
     font-weight: 500;
 }
+
 .react i{
     filter: invert(.7);
+    color: gray; 
 }
+
 .react:hover{
 
     background-color: #3a3b3c;
@@ -358,7 +375,8 @@
     border-radius: 20px;
     border: none;
     outline: none;
-    color: #d9d9d9;
-    font-size: 1rem;
+    color: #bcbcbc;
+    font-weight: 400;
+    font-size: .9rem;
     padding-left: 20px;
 }
